@@ -134,3 +134,17 @@ a {
 .hero-summary .item {
   display: flex;
 }
+
+.hero-summary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff9e8;
+}
+
+.hero-summary .info {
+  margin-left: 16px;
+}
