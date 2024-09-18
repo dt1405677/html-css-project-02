@@ -15,31 +15,18 @@ a {
   text-decoration: none;
 }
 
-/* Common */
-.main-content {
-  width: 1170px;
-  max-width: calc(100% - 48px);
-  margin-left: auto;
-  margin-right: auto;
-  background: #fffcf4;
-}
-
-.btn {
-  display: inline-block;
-  min-width: 118px;
-  padding: 0 16px;
-  line-height: 50px;
-  color: #fff;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 600;
-  background: #171100;
-  border-radius: 24.5px;
-}
-
 /* ================================= */
 
 /* Header */
+.header {
+  background: #fffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
 .header .body {
   display: flex;
   align-items: center;
@@ -51,34 +38,4 @@ a {
 }
 .nav ul {
   display: flex;
-}
-
-.nav a {
-  position: relative;
-  color: #5f5b53;
-  font-size: 1.6rem;
-  padding: 8px 21px;
-}
-
-.nav a:hover,
-.nav li.active a {
-  color: #171100;
-  /* font-weight: 600; */
-  text-shadow: 1px 0 0 currentColor;
-}
-
-.nav li.active a::after {
-  position: absolute;
-  left: 21px;
-  bottom: 6px;
-  content: "";
-  display: block;
-  width: 12px;
-  height: 2px;
-  border-radius: 1px;
-  background: #171100;
-}
-
-.header .sign-up-btn {
-  min-width: 144px;
 }
