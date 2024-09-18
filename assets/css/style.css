@@ -24,11 +24,26 @@ a {
   background: #fffcf4;
 }
 
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: #171100;
+  border-radius: 24.5px;
+}
+
 /* ================================= */
 
 /* Header */
 .header .body {
   display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
 }
 
 .nav {
@@ -62,4 +77,8 @@ a {
   height: 2px;
   border-radius: 1px;
   background: #171100;
+}
+
+.header .sign-up-btn {
+  min-width: 144px;
 }
