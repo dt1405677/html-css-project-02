@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-heading: Sen, sans-serif;
+  --primary-color: #ffb900;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -28,14 +33,17 @@ a {
   padding: 0 16px;
   min-width: 118px;
   line-height: 50px;
-  border-radius: 24.5px;
   background: #171100;
   color: #fff;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
+  border-radius: 999px;
 }
 
+.btn:hover {
+  opacity: 0.9;
+}
 /* ================================= */
 
 /* Header */
@@ -135,6 +143,10 @@ a {
   display: flex;
 }
 
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+
 .hero-summary .icon {
   width: 48px;
   height: 48px;
@@ -145,6 +157,59 @@ a {
   background: #fff9e8;
 }
 
+.hero-summary .item:nth-of-type(2) .icon {
+  background: #fcefff;
+}
+
+.hero-summary .item:nth-of-type(3) .icon {
+  background: #ebeaff;
+}
+
 .hero-summary .info {
   margin-left: 16px;
+}
+
+.hero-summary .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+
+.hero-summary .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+
+/* ====== Hero Right ====== */
+.hero .content-block {
+  width: 52%;
+  padding: 64px 0 0 130px;
+}
+
+.hero .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17; /* 117.241% */
+  letter-spacing: -0.02em;
+}
+
+.hero .desc {
+  margin-top: 22px 0;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.667; /* 166.667% */
+}
+
+.hero .cta-group {
+  margin: 38px 0 48px;
+}
+
+.hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primary-color);
 }
